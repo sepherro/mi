@@ -64,9 +64,9 @@ int main(void)
 
 		if(button_sts){
 			STM32F4_Discovery_LEDOff(LED3);
+			STM32F4_Discovery_LEDOff(LED4);
 			STM32F4_Discovery_LEDOff(LED5);
-			STM32F4_Discovery_LEDOff(LED3);
-			STM32F4_Discovery_LEDOff(LED5);
+			STM32F4_Discovery_LEDOff(LED6);
 		}
 	}
 }
