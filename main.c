@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include "stm32f4_discovery.h"
 #include "usbd_cdc_vcp.h"
+#include "led_driver.h"
+#include "core_cm4.h"
 
 /* Private macro */
 /* Private variables */
@@ -17,10 +19,20 @@ uint32_t i = 0;
 **===========================================================================
 */
 
+
+void SysTick_Handler (void)
+{
+	STM32F4_Discovery_LEDToggle(LED3);
+
+}
+
+
 int main(void)
 {
 
 	SystemInit();
+
+	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD, ENABLE);
 
 	STM32F4_Discovery_LEDInit(LED3); //Orange
 	STM32F4_Discovery_LEDInit(LED4); //Green
@@ -31,6 +43,16 @@ int main(void)
 
 	USBD_Init(&USB_OTG_dev,USB_OTG_FS_CORE_ID,&USR_desc,&USBD_CDC_cb,&USR_cb);
 
+	led_driver_init();
+
+	SysTick_Config(2100000);										//10 times a second 168 MHz / 8 = 21 MHz
+	SysTick_CLKSourceConfig(SysTick_CLKSource_HCLK_Div8);
+
+	//while(1)
+	//{
+	//led_driver_write_data(50, 10);
+
+	//}
 	while (1){
 
 		if(usb_cdc_kbhit()){

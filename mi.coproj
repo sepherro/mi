@@ -4,7 +4,7 @@
     <Device manufacturerId="9" manufacturerName="ST" chipId="344" chipName="STM32F407VG" boardId="" boardName=""/>
     <BuildOption>
       <Compile>
-        <Option name="OptimizationLevel" value="3"/>
+        <Option name="OptimizationLevel" value="0"/>
         <Option name="UseFPU" value="0"/>
         <Option name="UserEditCompiler" value=""/>
         <Option name="FPU" value="2"/>
@@ -81,10 +81,10 @@
     <Component id="526" name="SYSCFG" path="" type="2"/>
   </Components>
   <Files>
-    <File name="STM32_USB_Device_Library/Core/src" path="" type="2"/>
     <File name="STM32_USB_Device_Library/Core/inc/usbd_usr.h" path="STM32_USB_Device_Library/Core/inc/usbd_usr.h" type="1"/>
-    <File name="cmsis_lib/source/stm32f4xx_gpio.c" path="cmsis_lib/source/stm32f4xx_gpio.c" type="1"/>
+    <File name="STM32_USB_Device_Library/Core/src" path="" type="2"/>
     <File name="STM32_USB_OTG_Driver/inc" path="" type="2"/>
+    <File name="cmsis_lib/source/stm32f4xx_gpio.c" path="cmsis_lib/source/stm32f4xx_gpio.c" type="1"/>
     <File name="STM32_USB_OTG_Driver/inc/usb_dcd.h" path="STM32_USB_OTG_Driver/inc/usb_dcd.h" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_usart.c" path="cmsis_lib/source/stm32f4xx_usart.c" type="1"/>
     <File name="USB_CDC/inc/usbd_conf.h" path="USB_CDC/usbd_conf.h" type="1"/>
@@ -102,8 +102,8 @@
     <File name="STM32_USB_Device_Library/Class" path="" type="2"/>
     <File name="STM32_USB_OTG_Driver/inc/usb_conf_template.h" path="STM32_USB_OTG_Driver/inc/usb_conf_template.h" type="1"/>
     <File name="STM32_USB_Device_Library/Core/src/usbd_core.c" path="STM32_USB_Device_Library/Core/src/usbd_core.c" type="1"/>
-    <File name="cmsis_boot/stm32f4xx.h" path="cmsis_boot/stm32f4xx.h" type="1"/>
     <File name="cmsis/core_cm4_simd.h" path="cmsis/core_cm4_simd.h" type="1"/>
+    <File name="cmsis_boot/stm32f4xx.h" path="cmsis_boot/stm32f4xx.h" type="1"/>
     <File name="cmsis_boot/startup" path="" type="2"/>
     <File name="cmsis/core_cmFunc.h" path="cmsis/core_cmFunc.h" type="1"/>
     <File name="cmsis/core_cm4.h" path="cmsis/core_cm4.h" type="1"/>
@@ -111,9 +111,9 @@
     <File name="USB_CDC/src/usbd_cdc_vcp.c" path="USB_CDC/usbd_cdc_vcp.c" type="1"/>
     <File name="cmsis_lib/source/misc.c" path="cmsis_lib/source/misc.c" type="1"/>
     <File name="STM32_USB_Device_Library/Class/cdc/src" path="" type="2"/>
-    <File name="cmsis_lib/include/stm32f4xx_tim.h" path="cmsis_lib/include/stm32f4xx_tim.h" type="1"/>
     <File name="STM32_USB_Device_Library/Class/cdc/inc/usbd_cdc_core.h" path="STM32_USB_Device_Library/Class/cdc/inc/usbd_cdc_core.h" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_adc.c" path="cmsis_lib/source/stm32f4xx_adc.c" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_tim.h" path="cmsis_lib/include/stm32f4xx_tim.h" type="1"/>
     <File name="syscalls/syscalls.c" path="syscalls/syscalls.c" type="1"/>
     <File name="STM32_USB_OTG_Driver" path="" type="2"/>
     <File name="USB_CDC" path="" type="2"/>
@@ -133,8 +133,8 @@
     <File name="cmsis_lib/source/stm32f4xx_syscfg.c" path="cmsis_lib/source/stm32f4xx_syscfg.c" type="1"/>
     <File name="cmsis_boot/startup/startup_stm32f4xx.c" path="cmsis_boot/startup/startup_stm32f4xx.c" type="1"/>
     <File name="stdio" path="" type="2"/>
-    <File name="cmsis_lib/source/stm32f4xx_rcc.c" path="cmsis_lib/source/stm32f4xx_rcc.c" type="1"/>
     <File name="f4_discovery/inc/stm32f4_discovery.h" path="f4_discovery/inc/stm32f4_discovery.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_rcc.c" path="cmsis_lib/source/stm32f4xx_rcc.c" type="1"/>
     <File name="STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.c" path="STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.c" type="1"/>
     <File name="cmsis/core_cmInstr.h" path="cmsis/core_cmInstr.h" type="1"/>
     <File name="STM32_USB_OTG_Driver/src/usb_core.c" path="STM32_USB_OTG_Driver/src/usb_core.c" type="1"/>
