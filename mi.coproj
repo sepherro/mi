@@ -14,9 +14,9 @@
         <DefinedSymbols>
           <Define name="STM32F407VG"/>
           <Define name="STM32F4XX"/>
+          <Define name="__FPU_USED"/>
           <Define name="USE_STDPERIPH_DRIVER"/>
           <Define name="__ASSEMBLY__"/>
-          <Define name="__FPU_USED"/>
         </DefinedSymbols>
       </Compile>
       <Link useDefault="0">
@@ -87,6 +87,7 @@
     <File name="cmsis_lib/source/stm32f4xx_gpio.c" path="cmsis_lib/source/stm32f4xx_gpio.c" type="1"/>
     <File name="STM32_USB_OTG_Driver/inc/usb_dcd.h" path="STM32_USB_OTG_Driver/inc/usb_dcd.h" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_usart.c" path="cmsis_lib/source/stm32f4xx_usart.c" type="1"/>
+    <File name="motor_driver.c" path="motor_driver.c" type="1"/>
     <File name="USB_CDC/inc/usbd_conf.h" path="USB_CDC/usbd_conf.h" type="1"/>
     <File name="USB_CDC/inc/usbd_desc.h" path="USB_CDC/usbd_desc.h" type="1"/>
     <File name="STM32_USB_Device_Library" path="" type="2"/>
@@ -134,8 +135,8 @@
     <File name="cmsis_boot/startup/startup_stm32f4xx.c" path="cmsis_boot/startup/startup_stm32f4xx.c" type="1"/>
     <File name="stdio" path="" type="2"/>
     <File name="f4_discovery/inc/stm32f4_discovery.h" path="f4_discovery/inc/stm32f4_discovery.h" type="1"/>
-    <File name="cmsis_lib/source/stm32f4xx_rcc.c" path="cmsis_lib/source/stm32f4xx_rcc.c" type="1"/>
     <File name="STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.c" path="STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_rcc.c" path="cmsis_lib/source/stm32f4xx_rcc.c" type="1"/>
     <File name="cmsis/core_cmInstr.h" path="cmsis/core_cmInstr.h" type="1"/>
     <File name="STM32_USB_OTG_Driver/src/usb_core.c" path="STM32_USB_OTG_Driver/src/usb_core.c" type="1"/>
     <File name="STM32_USB_OTG_Driver/inc/usb_dcd_int.h" path="STM32_USB_OTG_Driver/inc/usb_dcd_int.h" type="1"/>
@@ -161,6 +162,7 @@
     <File name="STM32_USB_Device_Library/Core/inc/usbd_ioreq.h" path="STM32_USB_Device_Library/Core/inc/usbd_ioreq.h" type="1"/>
     <File name="f4_discovery" path="" type="2"/>
     <File name="cmsis_lib/include" path="" type="2"/>
+    <File name="motor_driver.h" path="motor_driver.h" type="1"/>
     <File name="led_drivers/led_driver.c" path="led_driver.c" type="1"/>
     <File name="STM32_USB_Device_Library/Core/src/usbd_req.c" path="STM32_USB_Device_Library/Core/src/usbd_req.c" type="1"/>
     <File name="STM32_USB_Device_Library/Core/inc" path="" type="2"/>

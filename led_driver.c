@@ -1,6 +1,6 @@
 #include "stm32f4xx_gpio.h"
 
-//LED driver 0, PORTE
+//LED driver 4, PORTD
 
 #define LED0_C GPIO_Pin_6
 #define LED0_D GPIO_Pin_7
